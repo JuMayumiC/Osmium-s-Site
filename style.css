@@ -150,9 +150,7 @@ img.pixel {
 /* Media queries */
 
 @media screen and (max-width: 1321px) {
-    .menu ul {
-        flex-direction: column;
-    }
+
 
     .menu li {
         margin-bottom: 1rem;
@@ -175,7 +173,7 @@ img.pixel {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     header {
         display: flex;
         flex-direction: column;
