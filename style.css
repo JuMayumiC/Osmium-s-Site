@@ -6,13 +6,13 @@
     --cor-hover: #7FC7FF; /* Azul claro ao passar o mouse */
     --cor-subtitulos: #17488F; /* Azul escuro para os subtítulos */
     --cor-texto-rodape: #3E6B27; /* Verde escuro para o texto do rodapé */
-    --cor-background-header: #D19A66; /* Marrom claro para o cabeçalho */
+    --cor-background-header: #f3aa65dc; /* Marrom claro para o cabeçalho */
     --cor-border-header: #5E4429;
     --cor-background-menu: #ffc400; /* Verde claro para a barra de navegação */
     --cor-border-menu: #3b250d;
-    --cor-background-conteudo: #D19A66; /* Fundo marrom claro para o container */
+    --cor-background-conteudo: #f3aa65; /* Fundo marrom claro para o container */
     --cor-border-conteudo: #5E4429;
-    --cor-background-footer: #D19A66; /* Marrom claro para o rodapé */
+    --cor-background-footer: #f3aa65dc; /* Marrom claro para o rodapé */
     --cor-border-footer: #5E4429;
     --fonte-press-start: 'Monocraft';
     --fonte-stardew-all-caps: 'Stardew Valley ALL CAPS';
@@ -185,5 +185,7 @@ img.pixel {
 
     .conteudo {
         padding: 10px;
+        margin:  10px;
     }
+   
 }
