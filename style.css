@@ -1,85 +1,191 @@
-* {
+/* Definição de variáveis */
+:root {
+    --cor-texto-principal: #FFFFFF; /* Cor de texto principal branca */
+    --cor-titulo-site: #fac000; /* Verde escuro para o título do site */
+    --cor-links: #251601; /* Verde escuro para os links */
+    --cor-hover: #7FC7FF; /* Azul claro ao passar o mouse */
+    --cor-subtitulos: #17488F; /* Azul escuro para os subtítulos */
+    --cor-texto-rodape: #3E6B27; /* Verde escuro para o texto do rodapé */
+    --cor-background-header: #D19A66; /* Marrom claro para o cabeçalho */
+    --cor-border-header: #5E4429;
+    --cor-background-menu: #ffc400; /* Verde claro para a barra de navegação */
+    --cor-border-menu: #3b250d;
+    --cor-background-conteudo: #D19A66; /* Fundo marrom claro para o container */
+    --cor-border-conteudo: #5E4429;
+    --cor-background-footer: #D19A66; /* Marrom claro para o rodapé */
+    --cor-border-footer: #5E4429;
+    --fonte-press-start: 'Monocraft', cursive;
+    --fonte-stardew-all-caps: 'Stardew Valley ALL CAPS';
+    --fonte-stardew: 'Stardew Valley';
+}
+
+/* Carregar a fonte Stardew Valley ALL CAPS */
+@font-face {
+    font-family: 'Stardew Valley ALL CAPS';
+    src: url('StardewValleyALLCAPS.ttf') format('truetype');
+}
+
+/* Carregar a fonte Stardew Valley */
+@font-face {
+    font-family: 'Stardew Valley';
+    src: url('StardewValley.ttf') format('truetype');
+}
+
+
+
+html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
+
+/* Estilo base */
+body {
+    font-family: var(--fonte-press-start);
+    color: var(--cor-texto-principal);
+    margin: 0;
+    padding: 0;
+    background-image: url('fundo.png');
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Estilos específicos */
 
 header {
-    background-color: #333;
-    color: white;
-    padding: 1rem;
+    background-color: var(--cor-background-header);
+    padding: 20px;
     text-align: center;
-    justify-content: space-between;
+    border-bottom: 2px solid var(--cor-border-header);
+}
+
+header h1 {
+    font-family: var(--fonte-stardew-all-caps);
+    color: var(--cor-titulo-site);
+    margin: 0;
+    font-size: 4em;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
     display: flex;
+    justify-content: center;
+    background-color: var(--cor-background-menu);
+    border-bottom: 2px solid var(--cor-border-menu);
+    margin: 0;
 }
 
-ul {
-    list-style-type: none;
-    display: flex;
+.menu li {
+    margin: 0 15px;
 }
 
-ul li {
-    margin-right: 1rem;
-}
-
-ul li a {
-    color: white;
+.menu a {
+    font-family: var(--fonte-stardew), cursive;
+    font-size: 1.5em;
+    color: var(--cor-links);
     text-decoration: none;
-}   
-
-section {
-    padding: 1rem;
+    padding: 10px;
+    display: block;
 }
 
-div {
-    padding: 1rem;
+.menu a:hover {
+    background-color: var(--cor-hover);
+    border-radius: 5px;
 }
 
-h2 {
-    line-height: 65px;
+.conteudo {
+    flex: 1;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--cor-background-conteudo);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid var(--cor-border-conteudo);
 }
 
-.objetivos ul {
-    list-style-type: circle;
-
+.conteudo h2 {
+    font-family: var(--fonte-stardew);
+    font-size: 2em;
+    color: var(--cor-subtitulos);
+    margin-top: 0;
 }
+
+.conteudo p, ul {
+    font-size: 1em;
+    line-height: 1.6;
+    font-family: var(--fonte-press-start);
+}
+
 
 footer {
-    background-color: #333;
-    color: white;
-    padding: 1rem;
+    background-color: var(--cor-background-footer);
+    padding: 10px;
     text-align: center;
+    border-top: 2px solid var(--cor-border-footer);
 }
 
+footer p {
+    font-family: var(--fonte-press-start);
+    color: var(--cor-texto-rodape);
+    margin: 0;
+}
+
+img.pixel {
+    image-rendering: pixelated;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+/* Media queries */
+
 @media screen and (max-width: 1321px) {
-    ul {
+    .menu ul {
         flex-direction: column;
     }
 
-    ul li {
+    .menu li {
         margin-bottom: 1rem;
     }
-
-
     
-}
-
-@media screen and (min-width: 600px) { 
-    header {
-      display: flex;
-      justify-content: space-between;
-  
+    .conteudo {
+        padding: 10px;
     }
 }
-  
-  @media screen and (max-width: 600px) { 
+
+@media screen and (min-width: 600px) {
     header {
-      display: flex;
-      flex-direction: column;
-  
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .conteudo {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        display: flex;
+        flex-direction: column;
     }
     
-    ul {
-      flex-direction: column;
+    .menu ul {
+        flex-direction: column;
+    }
+
+    .conteudo {
+        padding: 10px;
     }
 }
