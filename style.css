@@ -176,6 +176,10 @@ li {
     padding: 5px; /* Espaçamento interno dentro do item de lista */
 }
 
+p {
+    margin-bottom: 10px; /* Espaçamento entre parágrafos */
+}
+
 /* Media queries */
 
 @media screen and (max-width: 1321px) {
