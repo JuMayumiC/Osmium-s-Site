@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Osmium's Site</title>
+    <script>
+        // Função para alternar a visibilidade das seções
+        function toggleSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            section.style.display = (section.style.display === 'none' || section.style.display === '') ? 'block' : 'none';
+        }
+    </script>
 </head>
 
 <body>
@@ -15,9 +22,9 @@
         <menu class="menu">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="aba1.html">Aba 1</a></li>
-                <li><a href="aba2.html">Aba 2</a></li>
-                <li><a href="aba3.html">Aba 3</a></li>
+                <li><a href="aba1.html">Agroeconomia</a></li>
+                <li><a href="aba2.html">Educação</a></li>
+                <li><a href="aba3.html">Conscientização</a></li>
             </ul>
         </menu>
     </header>
@@ -27,6 +34,157 @@
             <p>Aqui mostraremos formas de tornar plantações mais sustentáveis e de forma viável, por meio de reciclagem e materiais de baixo custo. Isso conseguiria também se encaixar no ambiente urbano e seria útil para um ambiente menos degradado e para famílias mais pobres do campo. Essa ideia surgiu com uma relação muito forte com o filme “O menino que descobriu o vento” e o site do governo do Japão, que ensina como plantar arroz. 
                 Acho a ideia interessante especialmente pelas questões ambientais, além de serem informações úteis.                
             </p>
+        </div>
+    </section>
+    <section class="conteudo">
+        <div>
+            <h2> Cultura lucrativa para pequenos espaços</h2>
+                <button onclick="toggleSection('alface-button')">Alface <img src="alface.png" class="pixel" alt="alface" ></button>
+                <ul id="alface-button" style="display:none">
+                    <li>A alface é uma cultura altamente lucrativa, com ciclo curto (30 a 40 dias) e alta demanda no mercado. É possível cultivar diversas variedades, como crespa, lisa, americana, mimosa, frisée e romana. O cultivo pode ser feito em sementeiras ou diretamente no canteiro, e a alface hidropônica é uma opção eficiente para quem tem espaço limitado.
+                    </li>
+                </br>
+                    <button class="subbutton" onclick="toggleSection('alface-processo')">Processo de plantio da alface</button>
+                    <ul id="alface-processo" style="display: none;">
+                        <li>1. Preparo do solo → O solo deve ser bem drenado e rico em matéria orgânica.
+                        </li>
+                        <li>2. Semeadura → Semeie as sementes em bandejas de germinação ou diretamente no solo.
+                        </li>
+                        <li>3. Transplante → Quando as mudas atingirem 4-6 folhas verdadeiras, transplante-as para o canteiro definitivo.
+                        </li>
+                        <li>4. Irrigação → A alface necessita de irrigação constante, sem encharcamento.</li>
+                        <li>5. Colheita → Colha a alface quando as folhas estiverem bem desenvolvidas, em torno de 30 a 40 dias após a semeadura.
+                        </li>
+                    </ul>
+                    <button class="subbutton" onclick="toggleSection('alface-hidroponica')">Cultivo Hidropônico de Alface
+                    </button>
+                    <ul id="alface-hidroponica" style="display: none;">
+                        <li>A alface hidropônica é cultivada na água, sem uso de solo, em ambientes controlados como estufas. Existem vários sistemas de hidroponia, como canos de PVC com pequenos orifícios ou calhas. Uma solução nutritiva circula nesses sistemas, balanceada para prover o desenvolvimento das plantas, reduzindo a perda de minerais. </li>
+                    </ul>
+                    <button class="subbutton" onclick="toggleSection('alface-pet')">Cultivo de Alface em Garrafa PET</button>
+                    <ul id="alface-pet" style="display: none;">
+                        <li>Se você não tem uma horta ou muito espaço disponível em casa, plantar alface em garrafa PET é uma alternativa prática e sustentável. Aqui está o passo a passo para o cultivo: </li>
+                        <li>1. Corte a garrafa PET ao meio, fazendo pequenos furos na parte inferior para drenagem.</li>
+                        <li>2. Encha a garrafa com substrato, como terra adubada ou fibra de coco.</li>
+                        <li>3. Plante as sementes de alface e regue diariamente.</li>
+                        <li>4. Colha a alface quando as folhas estiverem bem desenvolvidas.</li>
+                </ul>
+                </ul>
+                <button onclick="toggleSection('pepino-button')">Pepino <img src="pepino.png" class="pixel" alt="pepino" ></button>
+                <ul id="pepino-button" style="display:none">
+                    <li>O cultivo de pepino é uma excelente opção para pequenos espaços, como quintais e varandas. O pepino é uma hortaliça de fácil cultivo, com ciclo de 60 a 90 dias. Existem variedades de pepino para conserva, salada e consumo in natura, atendendo a diferentes demandas do mercado.
+                    </li>
+                </br>
+                    <button class="subbutton" onclick="toggleSection('pepino-processo')">Processo de plantio do pepino</button>
+                    <ul id="pepino-processo" style="display: none;">
+                        <li>1. Preparo do solo → O solo deve ser rico em matéria orgânica e bem drenado.
+                        </li>
+                        <li>2. Semeadura → Semeie as sementes em covas ou diretamente no canteiro.
+                        </li>
+                        <li>3. Irrigação → O pepino necessita de irrigação constante, sem encharcamento.
+                        </li>
+                        <li>4. Colheita → Colha o pepino quando atingir o tamanho desejado, cortando com uma tesoura ou faca.</li>
+                    </ul>
+                </ul>
+                <button onclick="toggleSection('insumos-button')">Bons insumos <img src="insumos.png"  alt="bons insumos" ></button>
+                <ul id="insumos-button" style="display:none">
+                    <li>Investir em bons insumos é fundamental para garantir a produtividade e lucratividade das culturas. Isso inclui a preparação adequada do solo, a compra de sementes de qualidade e o uso de fertilizantes e defensivos apropriados. Na Biosul, por exemplo, é possível encontrar uma ampla gama de insumos necessários para maximizar os resultados do seu plantio.
+                    </li>
+                </br>
+                    <button class="subbutton" onclick="toggleSection('insumos-preparacao')">Preparação do solo</button>
+                    <ul id="insumos-preparacao" style="display: none;">
+                        <li>1. Análise do solo → Realize uma análise para verificar os nutrientes presentes e as correções necessárias.
+                        </li>
+                        <li>2. Calagem → Corrija a acidez do solo com calcário, garantindo o pH ideal para as plantas.
+                        </li>
+                        <li>3. Adubação → Utilize adubos orgânicos e químicos para fornecer os nutrientes essenciais às plantas.
+                        </li>
+                        <li>4. Preparo do canteiro → Revolva o solo, retirando pedras, raízes e outros detritos para facilitar o plantio.
+                        </li>
+                    </ul>
+                    <button class="subbutton" onclick="toggleSection('insumos-sementes')">Escolha das sementes de qualidade</button>
+                    <ul id="insumos-sementes" style="display: none;">
+                        <li>1. Variedade → Escolha sementes adaptadas ao clima e ao tipo de solo da sua região.
+                        </li>
+                        <li>2. Germinação → Verifique a data de validade e a taxa de germinação das sementes.
+                        </li>
+                        <li>3. Armazenamento → Guarde as sementes em local fresco e seco, protegidas da luz e da umidade.
+                        </li>
+                    </ul>
+                    <button class="subbutton" onclick="toggleSection('insumos-fertilizantes')">Uso de fertilizantes e defensivos</button>
+                    <ul id="insumos-fertilizantes" style="display: none;">
+                        <li>1. Fertilizantes → Aplique fertilizantes de acordo com a necessidade das plantas, evitando excessos que possam prejudicar o solo.
+                        </li>
+                        <li>2. Defensivos → Utilize defensivos de forma consciente, seguindo as recomendações de uso e respeitando o período de carência.</li>
+                        <li>3. Monitoramento contínuo → Realize inspeções regulares para detectar e tratar problemas precocemente.
+                        </li>
+                    </ul>
+                </ul>
+
+        </div>
+    </section>
+    <section class="conteudo">
+        <div>
+            <h2>Agricultura Sustentável e Inovações</h2>
+            <ul>
+                <li>Hidroponia
+                    <ul>
+                        <li>O mercado da hidroponia está em crescimento global, representando atualmente mais de US$ 1,5 bilhão e com previsão de quadruplicar até 2023, atingindo US$ 6,4 bilhões. A hidroponia é uma prática que não utiliza terra, substituída por uma solução de água enriquecida com nutrientes, tornando-se uma opção mais sustentável em comparação com a agricultura tradicional. É possível montar um cultivo hidropônico em casa, aproveitando-se de seus benefícios, como o uso racional de recursos.
+                    </li>
+                </br>
+                        <li>Características da Hidroponia:
+                        </li>
+                        <ul>
+                            <li>Solução nutritiva: Composição contendo nitrogênio, potássio, fósforo, cálcio, magnésio e enxofre, além de elementos adicionais em menor quantidade, obtidos a partir de sais ou fertilizantes orgânicos.
+                            </li>
+                            <li>Substratos: Suporte para as raízes, permitindo aeração. Exemplos incluem perlita, pedra-pomes, casca de arroz e lã de rocha.
+                            </li>
+                            <li>Tecnologia: Medidores de condutividade elétrica, pH, iluminação e controle do ar são fundamentais.
+                            </li>
+                        </ul>
+                    </ul>
+                </li>
+                </br>
+                <li>Estufas Agrícolas 
+                    <ul>
+                       <li>As estufas agrícolas são estruturas que mantêm o calor solar em seu interior, permitindo o cultivo de qualquer cultura. Elas protegem as plantas de estresses climáticos, ataques de insetos e doenças. Um exemplo de sucesso é a cidade de Almería, na Espanha, conhecida como “Mar de Plástico”, que produz anualmente até 3,5 milhões de toneladas de frutas e vegetais.
+                    </li> 
+                </br>
+                    <li>Vantagens das Estufas Agrícolas:</li>
+                    <ul>
+                        <li>Proteção às pragas: As estufas funcionam como barreiras contra pragas, facilitando o controle em casos de infestação.
+                        </li>
+                        <li> Economia na irrigação: Utilizam menos água devido ao ambiente controlado.
+                        </li>
+                        <li>Aumento da qualidade: Cultivos em estufas resultam em produtos de melhor qualidade.
+                        </li>
+                        <li>Aumento na lucratividade: Menores perdas e maior produtividade aumentam a lucratividade.</li>
+                        <li>Cultivo fora de época: Permitem o cultivo durante todo o ano, não sendo refém da sazonalidade.
+                        </li>
+                        <li>Redução de agrotóxicos: Menor uso de agrotóxicos devido à proteção contra pragas.</li>
+                    </ul>
+                </br>
+                    <li>Com todas essas vantagens, fica claro que estufas agrícolas proporcionam menor impacto ambiental, utilizando menos recursos como água e fertilizantes. O ambiente dentro da estufa pode ser controlado em variáveis como umidade do ar, umidade do solo e temperatura, criando condições ideais para o crescimento saudável e regular das plantas.</li>
+
+                    </ul>
+                </li>
+                </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="conteudo">
+        <div>
+            <h2>Reciclagem de Material Orgânico</h2>
+            <p>A reciclagem de material orgânico é benéfica para um agronegócio sustentável, reduzindo a quantidade necessária de insumos e defensivos agrícolas. Com essa técnica, os produtores diminuem gastos com agroquímicos, cujos preços têm aumentado nos últimos anos.
+            </p>
+        </div>
+    </section>
+   
+    <section class="conteudo">
+        <div> 
+            <h2>Agricultura Familiar</h2>
+            <p>A agricultura familiar é responsável pela maior parte dos empregos no campo e contribui significativamente para a produção de alimentos no Brasil. As principais culturas incluem café, feijão, mandioca, banana e abacaxi.</p>
         </div>
     </section>
     <footer>
