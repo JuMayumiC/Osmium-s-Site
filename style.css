@@ -170,6 +170,12 @@ img.pixel {
     margin: 0px;
 }
 
+
+li {
+    margin-bottom: 10px; /* Espaçamento entre itens de lista */
+    padding: 5px; /* Espaçamento interno dentro do item de lista */
+}
+
 /* Media queries */
 
 @media screen and (max-width: 1321px) {
