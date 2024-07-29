@@ -31,6 +31,11 @@
     src: url('StardewValley.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'Monocraft';
+    src: url('Monocraft.ttf') format('truetype');
+}
+
 
 
 html, body {
